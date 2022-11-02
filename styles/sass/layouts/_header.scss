@@ -1,0 +1,14 @@
+.header {
+
+
+    &__logo {
+        @extend %resmargin;
+        padding: 22px 0 11px 0;
+    }
+
+    &__logo-link {
+        @extend %link;
+
+    }
+
+}

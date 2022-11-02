@@ -1,0 +1,21 @@
+.location {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #eaeaea;
+    box-shadow: inset 0px 2px 2px darken($location-back, 11);
+
+    &__input {
+        text-align: center;
+        margin: 18px 0;
+        background-color: $location-back;
+        border: none;
+        outline: none;
+
+
+
+
+
+    }
+
+}
