@@ -1,9 +1,9 @@
 .location {
     display: flex;
     justify-content: center;
-    width: 100%;
     background-color: #eaeaea;
     box-shadow: inset 0px 2px 2px darken($location-back, 11);
+
 
     &__input {
         text-align: center;
@@ -13,9 +13,19 @@
         outline: none;
 
 
-
-
-
     }
+
+}
+
+.explore {
+    padding: 22px 30px 43px 30px;
+    background-color: $explore-back;
+    ;
+
+
+    &__text {
+        margin: 20px 0 30px 0;
+    }
+
 
 }

@@ -4,6 +4,9 @@
     &__logo {
         @extend %resmargin;
         padding: 22px 0 11px 0;
+        width: fit-content;
+        margin: 0 auto;
+
     }
 
     &__logo-link {
