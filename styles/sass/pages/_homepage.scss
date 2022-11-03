@@ -4,6 +4,21 @@
     background-color: #eaeaea;
     box-shadow: inset 0px 2px 2px darken($location-back, 11);
 
+    &::before {
+        display: flex;
+        align-items: center;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        content: '\f3c5';
+        font: var(--fa-font-solid);
+        position: relative;
+        left: 1rem;
+        font-size: 1rem;
+
+    }
+
+
+
 
     &__input {
         text-align: center;
@@ -11,20 +26,49 @@
         background-color: $location-back;
         border: none;
         outline: none;
+        font-family: $text-typo;
+        font-size: 1em;
+        font-weight: 500;
+        color: #353535;
 
+
+
+
+
+    }
+
+    &::placeholder {
+        font-family: $text-typo;
+        font-weight: 500;
+        color: #353535;
 
     }
 
 }
 
+
 .explore {
     padding: 22px 30px 43px 30px;
     background-color: $explore-back;
+    text-align: center;
     ;
+
+    &__heading {
+        font-family: $text-typo;
+        font-size: 1.1em;
+
+    }
+
 
 
     &__text {
         margin: 20px 0 30px 0;
+    }
+
+    &__text {
+        font-family: $text-typo;
+        font-size: 0.9em;
+        font-weight: 300;
     }
 
 

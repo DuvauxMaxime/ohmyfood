@@ -359,37 +359,6 @@ body {
   box-sizing: border-box;
 }
 
-.header__logo {
-  font-size: 2rem;
-  font-family: "Shrikhand", Arial, Helvetica, sans-serif;
-  text-align: center;
-}
-
-.location__input {
-  font-family: roboto, Arial, Helvetica, sans-serif;
-  font-size: 0.85em;
-  font-weight: 500;
-  color: #353535;
-}
-.location__input::placeholder {
-  font-family: roboto, Arial, Helvetica, sans-serif;
-  font-weight: 500;
-  color: #353535;
-}
-
-.explore {
-  text-align: center;
-}
-.explore__heading {
-  font-family: roboto, Arial, Helvetica, sans-serif;
-  font-size: 1.1em;
-}
-.explore__text {
-  font-family: roboto, Arial, Helvetica, sans-serif;
-  font-size: 0.9em;
-  font-weight: 300;
-}
-
 .explore__button {
   border-radius: 35px 35px 35px 35px;
   padding: 15px 20px;
@@ -406,6 +375,9 @@ body {
   padding: 22px 0 11px 0;
   width: fit-content;
   margin: 0 auto;
+  font-size: 2rem;
+  font-family: "Shrikhand", Arial, Helvetica, sans-serif;
+  text-align: center;
 }
 .location {
   display: flex;
@@ -413,20 +385,50 @@ body {
   background-color: #eaeaea;
   box-shadow: inset 0px 2px 2px #cfcfcf;
 }
+.location::before {
+  display: flex;
+  align-items: center;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  content: "\f3c5";
+  font: var(--fa-font-solid);
+  position: relative;
+  left: 1rem;
+  font-size: 1rem;
+}
 .location__input {
   text-align: center;
   margin: 18px 0;
   background-color: hsl(0deg, 0%, 92%);
   border: none;
   outline: none;
+  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  color: #353535;
+}
+.location::placeholder {
+  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color: #353535;
 }
 
 .explore {
   padding: 22px 30px 43px 30px;
   background-color: hsl(0deg, 0%, 97%);
+  text-align: center;
+}
+.explore__heading {
+  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
 }
 .explore__text {
   margin: 20px 0 30px 0;
+}
+.explore__text {
+  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  font-weight: 300;
 }
 
 /*# sourceMappingURL=style.css.map */
