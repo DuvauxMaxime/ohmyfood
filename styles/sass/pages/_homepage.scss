@@ -74,7 +74,7 @@
 }
 
 .functioning {
-    padding: 45px 26px 20px 26px;
+    padding: 45px 20px 20px 20px;
 
     &__heading {
         @include section_heading
@@ -91,7 +91,8 @@
 
 
         &__item {
-            min-width: 325px;
+            max-width: 310px;
+            min-width: 300px;
             position: relative;
             background-color: $grey97;
             width: 100%;
@@ -123,11 +124,94 @@
 }
 
 .restaurant {
-    padding: 45px 26px 20px 26px;
+    padding: 45px 20px 20px 20px;
     background-color: $grey97;
 
     &__heading {
         @include section_heading;
 
     }
+
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        padding: 0;
+
+
+    }
+}
+
+.card {
+    padding: 0;
+    list-style: none;
+    border-radius: 20px;
+    box-shadow: 2px 4px 12px darken($grey97, 11);
+
+    &__top {
+        position: relative;
+        height: 10.8rem;
+
+
+        >img {
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 60%;
+            width: 100%;
+            border-radius: 20px 20px 0 0;
+        }
+    }
+
+    &--new {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background-color: $tertiary-color;
+        color: #008766;
+        font-weight: 600;
+        font-family: $text-typo;
+        font-size: 1rem;
+        padding: 6px 8px;
+        border-radius: 3px;
+    }
+
+    &--disabled {
+        display: none;
+    }
+
+    &__bottom {
+        padding: 20px 60px 20px 14px;
+        list-style: none;
+        font-family: $text-typo;
+        background-color: #ffffff;
+        border-radius: 0 0 20px 20px;
+        position: relative;
+
+        h3 {
+            margin: 0 0 8px 0;
+            font-size: 1rem;
+            font-weight: 900;
+        }
+
+        &__location {
+            font-size: 0.95rem;
+
+        }
+
+        &::after {
+            display: flex;
+            align-items: center;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            content: '\f004';
+            font: var(--fa-font-regular);
+            position: absolute;
+            right: 1.5rem;
+            top: 1.5rem;
+            font-size: 2rem;
+
+        }
+    }
+
+
 }
