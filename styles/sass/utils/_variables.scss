@@ -6,9 +6,9 @@ $tertiary-color: #99E2D0;
 
 /* COULEURS SECONDAIRES */
 
-$location-back: hsl(0, 0%, 92%);
-/* BACKGROUND DIV LOCATION */
-$explore-back : hsl(0, 0%, 97%);
+/* BACKGROUND */
+$grey92: hsl(0, 0%, 92%);
+$grey97 : hsl(0, 0%, 97%);
 
 /* TYPOGRAPHIES */
 
@@ -21,3 +21,8 @@ $text-typo : roboto,
 Arial,
 Helvetica,
 sans-serif;
+
+
+/* LISTES */
+
+$functioning_icon : ('\f3cd', '\f0ca', '\f54e')
