@@ -9,6 +9,10 @@ $tertiary-color: #99E2D0;
 /* BACKGROUND */
 $grey92: hsl(0, 0%, 92%);
 $grey97 : hsl(0, 0%, 97%);
+$footer-background: hsl(0, 0%, 21%);
+
+$primary-color-l10: lighten($primary-color, 5);
+$secondary-color-l10: lighten($secondary-color, 5);
 
 /* TYPOGRAPHIES */
 

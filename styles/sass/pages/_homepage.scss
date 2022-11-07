@@ -108,13 +108,54 @@
                 border-radius: 50%;
                 background-color: $primary-color;
                 padding: 3px 7px;
-                font-size: 0.9rem;
+                font-size: 1rem;
                 color: #ffffff;
                 position: absolute;
                 left: -0.65rem;
 
             }
 
+            &:nth-child(1) :after {
+                display: flex;
+                align-items: center;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                content: '\f3cd';
+                font: var(--fa-font-solid);
+                position: absolute;
+                top: 37%;
+                left: 2.4rem;
+                font-size: 1.2rem;
+                color: #7e7e7e;
+            }
+
+            &:nth-child(2) :after {
+                display: flex;
+                align-items: center;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                content: '\f0ca';
+                font: var(--fa-font-solid);
+                position: absolute;
+                top: 37%;
+                left: 2.4rem;
+                font-size: 1.2rem;
+                color: #7e7e7e;
+            }
+
+            &:nth-child(3) :after {
+                display: flex;
+                align-items: center;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                content: '\f54e';
+                font: var(--fa-font-solid);
+                position: absolute;
+                top: 37%;
+                left: 2.4rem;
+                font-size: 1.2rem;
+                color: #7e7e7e;
+            }
         }
     }
 
@@ -124,7 +165,7 @@
 }
 
 .restaurant {
-    padding: 45px 20px 20px 20px;
+    padding: 45px 20px 64px 20px;
     background-color: $grey97;
 
     &__heading {
@@ -147,6 +188,11 @@
     list-style: none;
     border-radius: 20px;
     box-shadow: 2px 4px 12px darken($grey97, 11);
+
+    a {
+        text-decoration: none;
+        color: #000000;
+    }
 
     &__top {
         position: relative;
