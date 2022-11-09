@@ -726,14 +726,91 @@ body {
 .menu {
   background-color: hsl(0deg, 0%, 97%);
   border-radius: 40px 40px 0 0;
-  padding: 32px 13px 36px 13px;
+  padding: 12px 13px 36px 13px;
   position: relative;
   top: -3rem;
 }
 .menu__heading {
   width: 100%;
   font-family: "Shrikhand", Arial, Helvetica, sans-serif;
+}
+
+.starters__heading {
+  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 1.1rem;
+  margin-top: 40px;
+}
+.starters__list {
+  list-style: none;
+  padding: 0;
+}
+.starters__list :hover .items__checked::after {
+  display: flex;
+}
+.starters__items {
+  height: 68px;
+  padding-left: 0.65rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-radius: 25px;
+  box-shadow: 2px 4px 12px #dbdbdb;
+}
+
+.items__checked::after {
+  content: "";
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 59px;
+  height: 68px;
+  top: 0rem;
+  right: 0rem;
+  border-radius: 0 25px 25px 0;
+  background-color: #99E2D0;
+}
+
+.items__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 12px 0 12px 0;
+  width: 75%;
+}
+.items__name {
   margin: 0;
+  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.items__ingredients {
+  margin: 0;
+  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 300;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 70%;
+}
+.items__right {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 25%;
+  position: relative;
+}
+.items__price {
+  margin: 0 22px 12px 0;
+  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
 }
 
 /*# sourceMappingURL=style.css.map */
