@@ -91,8 +91,8 @@
 
 
         &__item {
-            max-width: 310px;
-            min-width: 300px;
+            max-width: 760px;
+            min-width: 240px;
             position: relative;
             background-color: $grey97;
             width: 100%;
@@ -101,6 +101,10 @@
             font-family: $text-typo;
             font-weight: 500;
             box-shadow: 2px 4px 12px darken($grey97, 11);
+
+            &:hover {
+                background-color: $pink-functioning;
+            }
 
             &::before {
                 content: counter(listCounter);
@@ -115,46 +119,28 @@
 
             }
 
-            &:nth-child(1) :after {
-                display: flex;
-                align-items: center;
-                text-rendering: auto;
-                -webkit-font-smoothing: antialiased;
-                content: '\f3cd';
-                font: var(--fa-font-solid);
-                position: absolute;
-                top: 37%;
-                left: 2.4rem;
-                font-size: 1.2rem;
-                color: #7e7e7e;
+            &:nth-child(1)::after {
+                @include functioning_icon('\f3cd');
             }
 
-            &:nth-child(2) :after {
-                display: flex;
-                align-items: center;
-                text-rendering: auto;
-                -webkit-font-smoothing: antialiased;
-                content: '\f0ca';
-                font: var(--fa-font-solid);
-                position: absolute;
-                top: 37%;
-                left: 2.4rem;
-                font-size: 1.2rem;
-                color: #7e7e7e;
+            &:nth-child(1):hover::after {
+                color: $primary-color;
             }
 
-            &:nth-child(3) :after {
-                display: flex;
-                align-items: center;
-                text-rendering: auto;
-                -webkit-font-smoothing: antialiased;
-                content: '\f54e';
-                font: var(--fa-font-solid);
-                position: absolute;
-                top: 37%;
-                left: 2.4rem;
-                font-size: 1.2rem;
-                color: #7e7e7e;
+            &:nth-child(2)::after {
+                @include functioning_icon('\f0ca')
+            }
+
+            &:nth-child(2):hover::after {
+                color: $primary-color;
+            }
+
+            &:nth-child(3)::after {
+                @include functioning_icon('\f54e')
+            }
+
+            &:nth-child(3):hover::after {
+                color: $primary-color;
             }
         }
     }
@@ -169,8 +155,7 @@
     background-color: $grey97;
 
     &__heading {
-        @include section_heading;
-
+        @include section_heading
     }
 
     &__cards {
@@ -178,8 +163,6 @@
         flex-direction: column;
         gap: 18px;
         padding: 0;
-
-
     }
 }
 
@@ -197,7 +180,6 @@
     &__top {
         position: relative;
         height: 10.8rem;
-
 
         >img {
             height: 100%;
@@ -241,9 +223,10 @@
 
         &__location {
             font-size: 0.95rem;
-
         }
+    }
 
+    &__heart {
         &::after {
             display: flex;
             align-items: center;
@@ -255,9 +238,17 @@
             right: 1.5rem;
             top: 1.5rem;
             font-size: 2rem;
+        }
 
+        &:active::after {
+            font: var(--fa-font-solid);
+            font-size: 2rem;
+            background: linear-gradient(225deg, $primary-color, $secondary-color);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            transition: all 650ms;
+            transition-timing-function: ease-out;
         }
     }
-
-
 }

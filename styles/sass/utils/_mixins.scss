@@ -9,3 +9,17 @@
     font-size: 1.2rem;
     margin: 0 0 31px 0;
 }
+
+@mixin functioning_icon($icon) {
+    display: flex;
+    align-items: center;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    content: $icon;
+    font: var(--fa-font-solid);
+    position: absolute;
+    top: 37%;
+    left: 12%;
+    font-size: 1.2rem;
+    color: #7e7e7e;
+}

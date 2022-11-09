@@ -1,5 +1,31 @@
 .header {
+    position: relative;
 
+    &__back--enabled::before {
+        display: flex;
+        align-items: center;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        content: '\f177';
+        font: var(--fa-font-solid);
+        position: absolute;
+        left: 5%;
+        top: 1.5rem;
+        font-size: 1.5rem;
+    }
+
+    &__back--disabled::before {
+        display: none;
+
+    }
+
+    &__back--enable:active::before {
+        color: black;
+    }
+
+    &__back--enable:visited:before {
+        color: black;
+    }
 
     &__logo {
         @extend %resmargin;
