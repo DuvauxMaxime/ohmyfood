@@ -12,14 +12,137 @@
 .menu {
     background-color: $grey97;
     border-radius: 40px 40px 0 0;
-    padding: 32px 13px 36px 13px;
+    padding: 12px 13px 36px 13px;
     position: relative;
     top: -3rem;
 
     &__heading {
         width: 100%;
         font-family: $logo-typo;
-        margin: 0;
+
     }
+
+}
+
+.starters {
+    &__heading {
+        font-family: $text-typo;
+        font-weight: 300;
+        font-size: 1.1rem;
+        margin-top: 40px;
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+
+
+        & :active .items__right {
+            display: flex;
+            transform: translateX(-59px);
+        }
+
+        & :active .items__checked::before {
+            transform: rotate(360deg);
+        }
+
+    }
+
+    &__items {
+        height: 68px;
+        padding-left: 0.65rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #ffffff;
+        border-radius: 25px;
+        box-shadow: 2px 4px 12px darken($grey97, 11);
+        overflow: hidden;
+
+    }
+}
+
+
+
+
+
+
+
+.items {
+
+
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 12px 0px 12px 0;
+        max-width: 60%;
+    }
+
+    &__name {
+        margin: 0;
+        font-family: $text-typo;
+        font-weight: 500;
+        font-size: 1.1rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+    }
+
+    &__ingredients {
+        margin: 0;
+        font-family: $text-typo;
+        font-size: 0.9rem;
+        font-weight: 300;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 70%;
+    }
+
+    &__right {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        width: 30%;
+        position: relative;
+        right: -59px;
+        transform: translateX(0);
+        transition: transform 700ms;
+
+    }
+
+    &__price {
+        margin: 0 22px 12px 0;
+        font-family: $text-typo;
+        font-weight: 500;
+        font-size: 0.9rem;
+    }
+
+    &__checked {
+        content: "";
+        display: flex;
+        min-width: 59px;
+        height: 68px;
+        background-color: $tertiary-color;
+
+        &::before {
+            content: '\f058';
+            display: flex;
+            align-items: center;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            font: var(--fa-font-solid);
+            position: relative;
+            left: 1.1rem;
+            font-size: 1.5rem;
+            color: #ffffff;
+            transform: rotate(0deg);
+            transition: transform 1000ms;
+        }
+    }
+
 
 }
