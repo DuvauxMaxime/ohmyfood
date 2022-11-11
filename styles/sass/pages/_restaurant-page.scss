@@ -37,9 +37,13 @@
         padding: 0;
 
 
-        & :hover .items__right {
+        & :active .items__right {
             display: flex;
             transform: translateX(-59px);
+        }
+
+        & :active .items__checked::before {
+            transform: rotate(360deg);
         }
 
     }
@@ -124,5 +128,21 @@
         height: 68px;
         background-color: $tertiary-color;
 
+        &::before {
+            content: '\f058';
+            display: flex;
+            align-items: center;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            font: var(--fa-font-solid);
+            position: relative;
+            left: 1.1rem;
+            font-size: 1.5rem;
+            color: #ffffff;
+            transform: rotate(0deg);
+            transition: transform 1000ms;
+        }
     }
+
+
 }
