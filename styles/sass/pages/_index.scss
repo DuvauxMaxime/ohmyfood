@@ -29,11 +29,6 @@
         font-size: 1em;
         font-weight: 500;
         color: #353535;
-
-
-
-
-
     }
 
     &::placeholder {
@@ -171,6 +166,7 @@
     list-style: none;
     border-radius: 20px;
     box-shadow: 2px 4px 12px darken($grey97, 11);
+    position: relative;
 
     a {
         text-decoration: none;
@@ -213,7 +209,6 @@
         font-family: $text-typo;
         background-color: #ffffff;
         border-radius: 0 0 20px 20px;
-        position: relative;
 
         h3 {
             margin: 0 0 8px 0;
@@ -223,10 +218,13 @@
 
         &__location {
             font-size: 0.95rem;
+            margin: 0;
         }
     }
 
     &__heart {
+
+
         &::after {
             display: flex;
             align-items: center;
@@ -236,8 +234,9 @@
             font: var(--fa-font-regular);
             position: absolute;
             right: 1.5rem;
-            top: 1.5rem;
+            top: 12.3rem;
             font-size: 2rem;
+            cursor: pointer;
         }
 
         &:active::after {
