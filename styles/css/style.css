@@ -702,6 +702,7 @@ body {
   right: 1.5rem;
   top: 12.3rem;
   font-size: 2rem;
+  cursor: pointer;
 }
 .card__heart:active::after {
   font: var(--fa-font-solid);
