@@ -821,7 +821,7 @@ body {
   transition-timing-function: ease-out;
 }
 
-main {
+.main__menu {
   position: relative;
   height: 1377px;
 }
