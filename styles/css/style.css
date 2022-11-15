@@ -899,6 +899,7 @@ body {
   transform: translateX(0);
   transition: transform 700ms;
   background: #ffffff;
+  border-left: 1px solid #ffffff;
 }
 .items__price {
   margin: 0 22px 12px 0;
