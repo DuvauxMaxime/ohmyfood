@@ -872,6 +872,36 @@ body {
   transition: all 650ms;
   transition-timing-function: ease-out;
 }
+.menu__starters :nth-child(2) {
+  animation-delay: 0.2s;
+}
+.menu__starters :nth-child(3) {
+  animation-delay: 0.4s;
+}
+.menu__starters :nth-child(4) {
+  animation-delay: 0.6s;
+}
+.menu__starters :nth-child(5) {
+  animation-delay: 0.8s;
+}
+.menu__main-dish :nth-child(2) {
+  animation-delay: 1s;
+}
+.menu__main-dish :nth-child(3) {
+  animation-delay: 1.2s;
+}
+.menu__main-dish :nth-child(4) {
+  animation-delay: 1.4s;
+}
+.menu__dessert :nth-child(2) {
+  animation-delay: 1.6s;
+}
+.menu__dessert :nth-child(3) {
+  animation-delay: 1.8s;
+}
+.menu__dessert :nth-child(4) {
+  animation-delay: 2s;
+}
 
 .starters__heading {
   font-family: roboto, Arial, Helvetica, sans-serif;
@@ -880,6 +910,8 @@ body {
   margin-top: 40px;
   margin-bottom: 9px;
   text-transform: uppercase;
+  opacity: 0;
+  animation: appear 1s forwards ease-out;
 }
 .starters__list {
   list-style: none;
@@ -911,6 +943,15 @@ body {
   box-shadow: 2px 4px 12px #dbdbdb;
   overflow: hidden;
   position: relative;
+  opacity: 0;
+  animation: appear 1s forwards ease-out;
+}
+.starters__underline {
+  background-color: #99E2D0;
+  width: 40px;
+  height: 3px;
+  opacity: 0;
+  animation: appear 1s forwards ease-out;
 }
 
 .items__left {
@@ -987,6 +1028,9 @@ body {
   margin-top: 40px;
   margin-bottom: 9px;
   text-transform: uppercase;
+  opacity: 0;
+  animation: appear 1s forwards ease-out;
+  animation-delay: 1s;
 }
 .main-dish__list {
   list-style: none;
@@ -1018,6 +1062,16 @@ body {
   box-shadow: 2px 4px 12px #dbdbdb;
   overflow: hidden;
   position: relative;
+  opacity: 0;
+  animation: appear 1s forwards ease-out;
+}
+.main-dish__underline {
+  background-color: #99E2D0;
+  width: 40px;
+  height: 3px;
+  opacity: 0;
+  animation: appear 1s forwards ease-out;
+  animation-delay: 1s;
 }
 
 .dessert__heading {
@@ -1027,6 +1081,9 @@ body {
   margin-top: 40px;
   margin-bottom: 9px;
   text-transform: uppercase;
+  opacity: 0;
+  animation: appear 1s forwards ease-out;
+  animation-delay: 1.4s;
 }
 .dessert__list {
   list-style: none;
@@ -1058,18 +1115,33 @@ body {
   box-shadow: 2px 4px 12px #dbdbdb;
   overflow: hidden;
   position: relative;
+  opacity: 0;
+  animation: appear 1s forwards ease-out;
 }
-
-.underline {
+.dessert__underline {
   background-color: #99E2D0;
   width: 40px;
   height: 3px;
+  opacity: 0;
+  animation: appear 1s forwards ease-out;
+  animation-delay: 1.4s;
 }
 
 .command__button {
   margin: 24px 0 4px 0;
   width: 186px;
   align-self: center;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
