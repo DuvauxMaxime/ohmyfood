@@ -823,7 +823,7 @@ body {
 
 .main__menu {
   position: relative;
-  height: 1377px;
+  margin-bottom: -3rem;
 }
 
 .image {
