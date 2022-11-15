@@ -849,6 +849,29 @@ main {
   width: 100%;
   font-family: "Shrikhand", Arial, Helvetica, sans-serif;
 }
+.menu__heart::after {
+  display: flex;
+  align-items: center;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  content: "\f004";
+  font: var(--fa-font-regular);
+  position: absolute;
+  right: 7%;
+  top: 1.6rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.menu__heart:active::after {
+  font: var(--fa-font-solid);
+  font-size: 2rem;
+  background: linear-gradient(225deg, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: all 650ms;
+  transition-timing-function: ease-out;
+}
 
 .starters__heading {
   font-family: roboto, Arial, Helvetica, sans-serif;
