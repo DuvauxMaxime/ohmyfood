@@ -23,14 +23,13 @@
     display: flex;
     flex-direction: column;
 
+
     &__heading {
         width: 100%;
         font-family: $logo-typo;
-
     }
 
     &__heart {
-
 
         &::after {
             display: flex;
@@ -58,9 +57,55 @@
         }
     }
 
+    &__starters {
+        & :nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        & :nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        & :nth-child(4) {
+            animation-delay: 0.6s;
+        }
+
+        & :nth-child(5) {
+            animation-delay: 0.8s;
+        }
+    }
+
+    &__main-dish {
+        & :nth-child(2) {
+            animation-delay: 1s;
+        }
+
+        & :nth-child(3) {
+            animation-delay: 1.2s;
+        }
+
+        & :nth-child(4) {
+            animation-delay: 1.4s;
+        }
+    }
+
+    &__dessert {
+        & :nth-child(2) {
+            animation-delay: 1.6s;
+        }
+
+        & :nth-child(3) {
+            animation-delay: 1.8s;
+        }
+
+        & :nth-child(4) {
+            animation-delay: 2s;
+        }
+    }
 }
 
 .starters {
+
     &__heading {
         font-family: $text-typo;
         font-weight: 300;
@@ -68,6 +113,9 @@
         margin-top: 40px;
         margin-bottom: 9px;
         text-transform: uppercase;
+        opacity: 0;
+        animation: appear 1s forwards ease-out;
+
     }
 
     &__list {
@@ -105,11 +153,22 @@
         box-shadow: 2px 4px 12px darken($grey97, 11);
         overflow: hidden;
         position: relative;
+        opacity: 0;
+        animation: appear 1s forwards ease-out;
+    }
+
+    &__underline {
+        background-color: $tertiary-color;
+        width: 40px;
+        height: 3px;
+        opacity: 0;
+        animation: appear 1s forwards ease-out;
     }
 }
 
 
 .items {
+
     &__left {
         display: flex;
         flex-direction: column;
@@ -193,6 +252,9 @@
         margin-top: 40px;
         margin-bottom: 9px;
         text-transform: uppercase;
+        opacity: 0;
+        animation: appear 1s forwards ease-out;
+        animation-delay: 1s;
     }
 
     &__list {
@@ -229,6 +291,18 @@
         box-shadow: 2px 4px 12px darken($grey97, 11);
         overflow: hidden;
         position: relative;
+        opacity: 0;
+        animation: appear 1s forwards ease-out;
+
+    }
+
+    &__underline {
+        background-color: $tertiary-color;
+        width: 40px;
+        height: 3px;
+        opacity: 0;
+        animation: appear 1s forwards ease-out;
+        animation-delay: 1s;
     }
 }
 
@@ -240,6 +314,9 @@
         margin-top: 40px;
         margin-bottom: 9px;
         text-transform: uppercase;
+        opacity: 0;
+        animation: appear 1s forwards ease-out;
+        animation-delay: 1.4s;
     }
 
     &__list {
@@ -277,13 +354,18 @@
         box-shadow: 2px 4px 12px darken($grey97, 11);
         overflow: hidden;
         position: relative;
+        opacity: 0;
+        animation: appear 1s forwards ease-out;
     }
-}
 
-.underline {
-    background-color: $tertiary-color;
-    width: 40px;
-    height: 3px;
+    &__underline {
+        background-color: $tertiary-color;
+        width: 40px;
+        height: 3px;
+        opacity: 0;
+        animation: appear 1s forwards ease-out;
+        animation-delay: 1.4s;
+    }
 }
 
 .command {
@@ -291,5 +373,17 @@
         margin: 24px 0 4px 0;
         width: 186px;
         align-self: center;
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
     }
 }
