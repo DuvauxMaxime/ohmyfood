@@ -378,6 +378,24 @@ body {
   transition-timing-function: ease-in-out;
 }
 
+.command__button {
+  border-radius: 35px 35px 35px 35px;
+  padding: 15px 20px;
+  border: 0px;
+  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  color: #fff;
+  background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 0px 3px 8px grey;
+  cursor: pointer;
+}
+.command__button:hover {
+  box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.9);
+  filter: brightness(108%);
+  transition: all 350ms;
+  transition-timing-function: ease-in-out;
+}
+
 .loading__spinner {
   max-width: 768px;
   width: 100%;
@@ -819,6 +837,8 @@ body {
   padding: 12px 13px 36px 13px;
   position: relative;
   top: -3rem;
+  display: flex;
+  flex-direction: column;
 }
 .menu__heading {
   width: 100%;
@@ -1016,6 +1036,12 @@ body {
   background-color: #99E2D0;
   width: 40px;
   height: 3px;
+}
+
+.command__button {
+  margin: 24px 0 4px 0;
+  width: 186px;
+  align-self: center;
 }
 
 /*# sourceMappingURL=style.css.map */
