@@ -23,3 +23,20 @@
     font-size: 1.2rem;
     color: #7e7e7e;
 }
+
+$breakpoints: (
+    tablet: 769px,
+    desktop: 1024px
+);
+
+@mixin tablet {
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+        @content;
+    }
+}

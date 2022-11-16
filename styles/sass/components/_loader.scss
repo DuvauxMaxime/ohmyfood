@@ -9,6 +9,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include tablet {
+        max-width: 1023px;
+    }
+
+    @include desktop {
+        max-width: none;
+    }
 }
 
 @keyframes loader {
