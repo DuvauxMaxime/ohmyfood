@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./styles/sass/main.scss:./styles/css/style.css",
+    "prefix": "postcss ./styles/css/style.css --use autoprefixer -d ./styles/css/prefixed/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Duvaux Maxime",
-  "license": "ISC"
+  "license": "ISC",
+  "browserslist": "last 4 versions"
 }
