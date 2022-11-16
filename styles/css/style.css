@@ -359,6 +359,11 @@ body {
   max-width: 768px;
   box-sizing: border-box;
 }
+@media screen and (min-width: 769px) {
+  body {
+    max-width: 1023px;
+  }
+}
 
 .explore__button {
   border-radius: 35px 35px 35px 35px;
