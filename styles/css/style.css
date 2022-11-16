@@ -364,6 +364,11 @@ body {
     max-width: 1023px;
   }
 }
+@media screen and (min-width: 1024px) {
+  body {
+    max-width: none;
+  }
+}
 
 .explore__button {
   border-radius: 35px 35px 35px 35px;
@@ -412,6 +417,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 769px) {
+  .loading__spinner {
+    max-width: 1023px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .loading__spinner {
+    max-width: none;
+  }
 }
 
 @keyframes loader {
@@ -655,6 +670,11 @@ body {
   gap: 1.4rem;
   counter-reset: listCounter;
 }
+@media screen and (min-width: 1024px) {
+  .functioning__list {
+    flex-direction: row;
+  }
+}
 .functioning__list__item {
   max-width: 760px;
   min-width: 240px;
@@ -666,6 +686,11 @@ body {
   font-family: roboto, Arial, Helvetica, sans-serif;
   font-weight: 500;
   box-shadow: 2px 4px 12px #dbdbdb;
+}
+@media screen and (min-width: 769px) {
+  .functioning__list__item {
+    max-width: 1023px;
+  }
 }
 .functioning__list__item:hover {
   background-color: #f5edff;
@@ -748,6 +773,21 @@ body {
   gap: 18px;
   padding: 0;
 }
+@media screen and (min-width: 769px) {
+  .restaurant__cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 18px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .restaurant__cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 28px;
+  }
+}
 
 .card {
   padding: 0;
@@ -755,6 +795,16 @@ body {
   border-radius: 20px;
   box-shadow: 2px 4px 12px #dbdbdb;
   position: relative;
+}
+@media screen and (min-width: 769px) {
+  .card {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card {
+    max-width: 30%;
+  }
 }
 .card a {
   text-decoration: none;
