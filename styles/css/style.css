@@ -536,6 +536,40 @@ body {
   font-family: "Shrikhand", Arial, Helvetica, sans-serif;
   text-align: center;
 }
+.location {
+  display: flex;
+  justify-content: center;
+  background-color: #eaeaea;
+  box-shadow: inset 0px 2px 2px #cfcfcf;
+}
+.location::before {
+  display: flex;
+  align-items: center;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  content: "\f3c5";
+  font: var(--fa-font-solid);
+  position: relative;
+  left: 1rem;
+  font-size: 1rem;
+}
+.location__input {
+  text-align: center;
+  margin: 18px 0;
+  background-color: hsl(0deg, 0%, 92%);
+  border: none;
+  outline: none;
+  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  color: #353535;
+}
+.location::placeholder {
+  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color: #353535;
+}
+
 .footer {
   background-color: hsl(0deg, 0%, 21%);
   padding: 27px 20px 35px 20px;
