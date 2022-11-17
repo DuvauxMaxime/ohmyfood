@@ -5,7 +5,6 @@
 /* TYPOGRAPHIES */
 /* LISTES */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
-
 .header__logo-link {
   /* Reset les propriétés des liens */
   text-decoration: none;
@@ -360,13 +359,11 @@ body {
   max-width: 768px;
   box-sizing: border-box;
 }
-
 @media screen and (min-width: 769px) {
   body {
     max-width: 1023px;
   }
 }
-
 @media screen and (min-width: 1024px) {
   body {
     max-width: none;
@@ -384,7 +381,6 @@ body {
   box-shadow: 0px 3px 8px grey;
   cursor: pointer;
 }
-
 .explore__button:hover {
   box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.9);
   filter: brightness(108%);
@@ -403,7 +399,6 @@ body {
   box-shadow: 0px 3px 8px grey;
   cursor: pointer;
 }
-
 .command__button:hover {
   box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.9);
   filter: brightness(108%);
@@ -423,13 +418,11 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 @media screen and (min-width: 769px) {
   .loading__spinner {
     max-width: 1023px;
   }
 }
-
 @media screen and (min-width: 1024px) {
   .loading__spinner {
     max-width: none;
@@ -440,17 +433,14 @@ body {
   0% {
     opacity: 1;
   }
-
   80% {
     opacity: 0.8;
   }
-
   100% {
     opacity: 0;
     visibility: hidden;
   }
 }
-
 .loader__letters {
   font-family: "Shrikhand", Arial, Helvetica, sans-serif;
   font-size: 2.5rem;
@@ -464,28 +454,23 @@ body {
     color: #9356DC;
     text-shadow: 2px 2px 10px #9356DC;
   }
-
   40% {
     transform: translateY(0px);
   }
-
   50% {
     transform: scale(1.5);
     color: #FF79DA;
     text-shadow: 2px 2px 10px #FF79DA;
   }
-
   80% {
     transform: translateY(0px);
   }
-
   100% {
     transform: translateY(-350px);
     color: #99E2D0;
     text-shadow: 2px 2px 10px #99E2D0;
   }
 }
-
 .loader__letters:nth-child(1) {
   animation-delay: 0s;
 }
@@ -521,7 +506,6 @@ body {
 .header {
   position: relative;
 }
-
 .header__back--enabled::before {
   display: flex;
   align-items: center;
@@ -535,19 +519,15 @@ body {
   font-size: 1.5rem;
   color: #000000;
 }
-
 .header__back--disabled::before {
   display: none;
 }
-
 .header__back--enable:active::before {
   color: black;
 }
-
 .header__back--enable:visited:before {
   color: black;
 }
-
 .header__logo {
   padding: 22px 0 11px 0;
   width: fit-content;
@@ -556,13 +536,11 @@ body {
   font-family: "Shrikhand", Arial, Helvetica, sans-serif;
   text-align: center;
 }
-
 .footer {
   background-color: hsl(0deg, 0%, 21%);
   padding: 27px 20px 35px 20px;
   color: #ffffff;
 }
-
 .footer a {
   text-decoration: none;
   color: #ffffff;
@@ -574,12 +552,10 @@ body {
   margin: 0;
   width: fit-content;
 }
-
 .nav__list :nth-child(2) {
   position: relative;
   left: 1.6rem;
 }
-
 .nav__list :nth-child(2)::before {
   display: flex;
   align-items: center;
@@ -593,12 +569,10 @@ body {
   font-size: 1rem;
   color: #ffffff;
 }
-
 .nav__list :nth-child(3) {
   position: relative;
   left: 1.6rem;
 }
-
 .nav__list :nth-child(3)::before {
   display: flex;
   align-items: center;
@@ -618,7 +592,6 @@ body {
   font-size: 1.5rem;
   margin-top: 0;
 }
-
 .list__item {
   font-family: roboto, Arial, Helvetica, sans-serif;
   font-size: 0.9rem;
@@ -633,7 +606,6 @@ body {
   background-color: #eaeaea;
   box-shadow: inset 0px 2px 2px #cfcfcf;
 }
-
 .location::before {
   display: flex;
   align-items: center;
@@ -645,7 +617,6 @@ body {
   left: 1rem;
   font-size: 1rem;
 }
-
 .location__input {
   text-align: center;
   margin: 18px 0;
@@ -657,7 +628,6 @@ body {
   font-weight: 500;
   color: #353535;
 }
-
 .location::placeholder {
   font-family: roboto, Arial, Helvetica, sans-serif;
   font-weight: 500;
@@ -669,17 +639,14 @@ body {
   background-color: hsl(0deg, 0%, 97%);
   text-align: center;
 }
-
 .explore__heading {
   font-family: roboto, Arial, Helvetica, sans-serif;
   font-size: 1.2em;
   padding: 0 45px;
 }
-
 .explore__text {
   margin: 20px 0 30px 0;
 }
-
 .explore__text {
   font-family: roboto, Arial, Helvetica, sans-serif;
   font-size: 0.9em;
@@ -689,13 +656,11 @@ body {
 .functioning {
   padding: 45px 20px 20px 20px;
 }
-
 .functioning__heading {
   font-family: roboto, Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
   margin: 0 0 31px 0;
 }
-
 .functioning__list {
   list-style: none;
   padding: 0;
@@ -705,13 +670,11 @@ body {
   gap: 1.4rem;
   counter-reset: listCounter;
 }
-
 @media screen and (min-width: 1024px) {
   .functioning__list {
     flex-direction: row;
   }
 }
-
 .functioning__list__item {
   max-width: 760px;
   min-width: 240px;
@@ -724,17 +687,14 @@ body {
   font-weight: 500;
   box-shadow: 2px 4px 12px #dbdbdb;
 }
-
 @media screen and (min-width: 769px) {
   .functioning__list__item {
     max-width: 1023px;
   }
 }
-
 .functioning__list__item:hover {
   background-color: #f5edff;
 }
-
 .functioning__list__item::before {
   content: counter(listCounter);
   counter-increment: listCounter;
@@ -746,7 +706,6 @@ body {
   position: absolute;
   left: -0.65rem;
 }
-
 .functioning__list__item:nth-child(1)::after {
   display: flex;
   align-items: center;
@@ -760,11 +719,9 @@ body {
   font-size: 1.2rem;
   color: #7e7e7e;
 }
-
 .functioning__list__item:nth-child(1):hover::after {
   color: #9356DC;
 }
-
 .functioning__list__item:nth-child(2)::after {
   display: flex;
   align-items: center;
@@ -778,11 +735,9 @@ body {
   font-size: 1.2rem;
   color: #7e7e7e;
 }
-
 .functioning__list__item:nth-child(2):hover::after {
   color: #9356DC;
 }
-
 .functioning__list__item:nth-child(3)::after {
   display: flex;
   align-items: center;
@@ -796,11 +751,9 @@ body {
   font-size: 1.2rem;
   color: #7e7e7e;
 }
-
 .functioning__list__item:nth-child(3):hover::after {
   color: #9356DC;
 }
-
 .functioning p {
   margin: 0 5% 0 25%;
 }
@@ -809,20 +762,17 @@ body {
   padding: 45px 20px 64px 20px;
   background-color: hsl(0deg, 0%, 97%);
 }
-
 .restaurant__heading {
   font-family: roboto, Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
   margin: 0 0 31px 0;
 }
-
 .restaurant__cards {
   display: flex;
   flex-direction: column;
   gap: 18px;
   padding: 0;
 }
-
 @media screen and (min-width: 769px) {
   .restaurant__cards {
     flex-direction: row;
@@ -831,7 +781,6 @@ body {
     row-gap: 18px;
   }
 }
-
 @media screen and (min-width: 1024px) {
   .restaurant__cards {
     flex-direction: row;
@@ -847,37 +796,31 @@ body {
   box-shadow: 2px 4px 12px #dbdbdb;
   position: relative;
 }
-
 @media screen and (min-width: 769px) {
   .card {
     width: 45%;
   }
 }
-
 @media screen and (min-width: 1024px) {
   .card {
     max-width: 30%;
   }
 }
-
 .card a {
   text-decoration: none;
   color: #000000;
 }
-
 .card__top {
   position: relative;
   height: 10.8rem;
 }
-
-.card__top>img {
+.card__top > img {
   height: 100%;
   object-fit: cover;
   object-position: 50% 60%;
   width: 100%;
   border-radius: 20px 20px 0 0;
 }
-
 .card--new {
   position: absolute;
   top: 1rem;
@@ -890,11 +833,9 @@ body {
   padding: 6px 8px;
   border-radius: 3px;
 }
-
 .card--disabled {
   display: none;
 }
-
 .card__bottom {
   padding: 20px 60px 20px 14px;
   list-style: none;
@@ -902,18 +843,15 @@ body {
   background-color: #ffffff;
   border-radius: 0 0 20px 20px;
 }
-
 .card__bottom h3 {
   margin: 0 0 8px 0;
   font-size: 1rem;
   font-weight: 900;
 }
-
 .card__bottom__location {
   font-size: 0.95rem;
   margin: 0;
 }
-
 .card__heart::after {
   display: flex;
   align-items: center;
@@ -927,7 +865,6 @@ body {
   font-size: 2rem;
   cursor: pointer;
 }
-
 .card__heart:active::after {
   font: var(--fa-font-solid);
   font-size: 2rem;
@@ -948,7 +885,6 @@ body {
   width: 100%;
   height: 250px;
 }
-
 .image img {
   width: 100%;
   height: 100%;
@@ -964,12 +900,10 @@ body {
   display: flex;
   flex-direction: column;
 }
-
 .menu__heading {
   width: 100%;
   font-family: "Shrikhand", Arial, Helvetica, sans-serif;
 }
-
 .menu__heart::after {
   display: flex;
   align-items: center;
@@ -983,7 +917,6 @@ body {
   font-size: 2rem;
   cursor: pointer;
 }
-
 .menu__heart:active::after {
   font: var(--fa-font-solid);
   font-size: 2rem;
@@ -994,43 +927,33 @@ body {
   transition: all 650ms;
   transition-timing-function: ease-out;
 }
-
 .menu__starters :nth-child(2) {
   animation-delay: 0.2s;
 }
-
 .menu__starters :nth-child(3) {
   animation-delay: 0.4s;
 }
-
 .menu__starters :nth-child(4) {
   animation-delay: 0.6s;
 }
-
 .menu__starters :nth-child(5) {
   animation-delay: 0.8s;
 }
-
 .menu__main-dish :nth-child(2) {
   animation-delay: 1s;
 }
-
 .menu__main-dish :nth-child(3) {
   animation-delay: 1.2s;
 }
-
 .menu__main-dish :nth-child(4) {
   animation-delay: 1.4s;
 }
-
 .menu__dessert :nth-child(2) {
   animation-delay: 1.6s;
 }
-
 .menu__dessert :nth-child(3) {
   animation-delay: 1.8s;
 }
-
 .menu__dessert :nth-child(4) {
   animation-delay: 2s;
 }
@@ -1045,7 +968,6 @@ body {
   opacity: 0;
   animation: appear 1s forwards ease-out;
 }
-
 .starters__list {
   list-style: none;
   padding: 0;
@@ -1054,21 +976,17 @@ body {
   gap: 12px;
   margin-top: 0;
 }
-
 .starters__list :active .items__right {
   display: flex;
   transform: translateX(-59px);
 }
-
 .starters__list :active .items__checked::before {
   transform: rotate(360deg);
 }
-
 .starters__list :active .items__left {
   padding-right: 40px;
   width: 60%;
 }
-
 .starters__items {
   height: 68px;
   padding-left: 0.65rem;
@@ -1083,7 +1001,6 @@ body {
   opacity: 0;
   animation: appear 1s forwards ease-out;
 }
-
 .starters__underline {
   background-color: #99E2D0;
   width: 40px;
@@ -1101,7 +1018,6 @@ body {
   transition: padding-right 800ms, width 800ms;
   box-sizing: border-box;
 }
-
 .items__name {
   margin: 0;
   font-family: roboto, Arial, Helvetica, sans-serif;
@@ -1111,7 +1027,6 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
 .items__ingredients {
   margin: 0;
   font-family: roboto, Arial, Helvetica, sans-serif;
@@ -1121,7 +1036,6 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
 .items__right {
   display: flex;
   align-items: flex-end;
@@ -1134,14 +1048,12 @@ body {
   background: #ffffff;
   border-left: 1px solid #ffffff;
 }
-
 .items__price {
   margin: 0 22px 12px 0;
   font-family: roboto, Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 0.9rem;
 }
-
 .items__checked {
   content: "";
   display: flex;
@@ -1149,7 +1061,6 @@ body {
   height: 68px;
   background-color: #99E2D0;
 }
-
 .items__checked::before {
   content: "\f058";
   display: flex;
@@ -1176,7 +1087,6 @@ body {
   animation: appear 1s forwards ease-out;
   animation-delay: 1s;
 }
-
 .main-dish__list {
   list-style: none;
   padding: 0;
@@ -1185,21 +1095,17 @@ body {
   gap: 12px;
   margin-top: 0;
 }
-
 .main-dish__list :active .items__right {
   display: flex;
   transform: translateX(-59px);
 }
-
 .main-dish__list :active .items__checked::before {
   transform: rotate(360deg);
 }
-
 .main-dish__list :active .items__left {
   padding-right: 40px;
   width: 60%;
 }
-
 .main-dish__items {
   height: 68px;
   padding-left: 0.65rem;
@@ -1214,7 +1120,6 @@ body {
   opacity: 0;
   animation: appear 1s forwards ease-out;
 }
-
 .main-dish__underline {
   background-color: #99E2D0;
   width: 40px;
@@ -1235,7 +1140,6 @@ body {
   animation: appear 1s forwards ease-out;
   animation-delay: 1.4s;
 }
-
 .dessert__list {
   list-style: none;
   padding: 0;
@@ -1244,21 +1148,17 @@ body {
   gap: 12px;
   margin-top: 0;
 }
-
 .dessert__list :active .items__right {
   display: flex;
   transform: translateX(-59px);
 }
-
 .dessert__list :active .items__checked::before {
   transform: rotate(360deg);
 }
-
 .dessert__list :active .items__left {
   padding-right: 40px;
   width: 60%;
 }
-
 .dessert__items {
   height: 68px;
   padding-left: 0.65rem;
@@ -1273,7 +1173,6 @@ body {
   opacity: 0;
   animation: appear 1s forwards ease-out;
 }
-
 .dessert__underline {
   background-color: #99E2D0;
   width: 40px;
@@ -1294,7 +1193,6 @@ body {
     opacity: 0;
     transform: translateY(60px);
   }
-
   100% {
     opacity: 1;
     transform: translateY(0px);
