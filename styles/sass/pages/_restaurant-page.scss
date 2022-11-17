@@ -52,8 +52,7 @@
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
-            transition: all 650ms;
-            transition-timing-function: ease-out;
+            animation: animated-heart 1s forwards ease-out;
         }
     }
 
@@ -104,6 +103,20 @@
     }
 }
 
+@keyframes animated-heart {
+    0% {
+        transform: scale(0);
+    }
+
+    80% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
 .starters {
 
     &__heading {
@@ -111,7 +124,7 @@
         font-weight: 300;
         font-size: 1.1rem;
         margin-top: 40px;
-        margin-bottom: 9px;
+        margin-bottom: 6px;
         text-transform: uppercase;
         opacity: 0;
         animation: appear 1s forwards ease-out;
@@ -174,7 +187,7 @@
         flex-direction: column;
         justify-content: space-between;
         margin: 12px 0px 12px 0;
-        width: 70%;
+        width: 85%;
         transition: padding-right 800ms, width 800ms;
         box-sizing: border-box;
     }
@@ -183,7 +196,7 @@
         margin: 0;
         font-family: $text-typo;
         font-weight: 500;
-        font-size: 1.1rem;
+        font-size: 1rem;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -250,7 +263,7 @@
         font-weight: 300;
         font-size: 1.1rem;
         margin-top: 40px;
-        margin-bottom: 9px;
+        margin-bottom: 6px;
         text-transform: uppercase;
         opacity: 0;
         animation: appear 1s forwards ease-out;
@@ -312,7 +325,7 @@
         font-weight: 300;
         font-size: 1.1rem;
         margin-top: 40px;
-        margin-bottom: 9px;
+        margin-bottom: 6px;
         text-transform: uppercase;
         opacity: 0;
         animation: appear 1s forwards ease-out;

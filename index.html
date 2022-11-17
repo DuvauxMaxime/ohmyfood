@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/css/style.css">
     <link href="styles/sass/vendors/fontawesome-free-6.2.0-web/css/all.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="./images/ohmyfood-favicon.png" />
     <title>Ohmyfood - Réservez le menu qui vous convient</title>
 </head>
 
@@ -23,12 +24,14 @@
     </div>
     <header class="header">
         <a class="header__back--disabled" href=""></a>
-        <h1 class="header__logo"><a class="header__logo-link" href="index.html">ohmyfood</a></h1>
-    </header>
-    <main>
+        <h1 class="header__logo">
+            <a class="header__logo-link" href="index.html">ohmyfood</a>
+        </h1>
         <div class="location">
             <input class="location__input" type="search" placeholder="Paris, Belleville">
         </div>
+    </header>
+    <main>
         <section class="explore">
             <h2 class="explore__heading">Réservez le menu qui vous convient</h2>
             <p class="explore__text">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
@@ -53,8 +56,10 @@
             <ul class="restaurant__cards">
                 <li class="card">
                     <a href="./restaurant-palette-du-gout.html">
-                        <div class="card__top"><img src="images/restaurant/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                                alt="La palette du goût"><span class="card--new">Nouveau</span></div>
+                        <div class="card__top">
+                            <img src="images/restaurant/restaurant-palette-du-gout.jpg" alt="La palette du goût">
+                            <span class="card--new">Nouveau</span>
+                        </div>
                         <div class="card__bottom">
                             <h3 class="card__bottom__heading">La palette du goût</h3>
                             <p class="card__bottom__location">Ménilmontant</p>
@@ -65,8 +70,10 @@
 
                 <li class="card">
                     <a href="./restaurant-note-enchantee.html">
-                        <div class="card__top"><img src="images/restaurant/stil-u2Lp8tXIcjw-unsplash.jpg"
-                                alt="La note enchantée"><span class="card--new">Nouveau</span></div>
+                        <div class="card__top">
+                            <img src="images/restaurant/restaurant-note-enchantee.jpg" alt="La note enchantée">
+                            <span class="card--new">Nouveau</span>
+                        </div>
                         <div class="card__bottom">
                             <h3 class="card__bottom__heading">La note enchantée</h3>
                             <p class="card__bottom__location">Charonne</p>
@@ -76,8 +83,10 @@
                 </li>
                 <li class="card">
                     <a href="./restaurant-francaise.html">
-                        <div class="card__top"><img src="images/restaurant/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-                                alt="À la française"><span class="card--disabled">Nouveau</span></div>
+                        <div class="card__top">
+                            <img src="images/restaurant/restaurant-francaise.jpg" alt="À la française">
+                            <span class="card--disabled">Nouveau</span>
+                        </div>
                         <div class="card__bottom">
                             <h3 class="card__bottom__heading">À la française</h3>
                             <p class="card__bottom__location">Cité Rouge</p>
@@ -87,9 +96,10 @@
                 </li>
                 <li class="card">
                     <a href="./restaurant-delice-des-sens.html">
-                        <div class="card__top"><img
-                                src="images/restaurant/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                                alt="Le délice des sens"><span class="card--disabled">Nouveau</span></div>
+                        <div class="card__top">
+                            <img src="images/restaurant/restaurant-delice-des-sens.jpg" alt="Le délice des sens">
+                            <span class="card--disabled">Nouveau</span>
+                        </div>
                         <div class="card__bottom">
                             <h3 class="card__bottom__heading">Le délice des sens</h3>
                             <p class="card__bottom__location">Folie-Méricourt</p>
@@ -101,19 +111,25 @@
         </section>
     </main>
     <footer class="footer">
-        <nav class="footer__nav">
-            <ul class="nav__list">
-                <li>
-                    <h2 class="list__heading"><a href="index.html">ohmyfood</a></h2>
-                </li>
-                <li class="list__item"><a href="#">Proposer un restaurant</a></li>
-                <li class="list__item"><a href="#">Devenir partenaire</a></li>
-                <li class="list__item"><a href="#">Mentions légales</a></li>
-                <li class="list__item"> <a href="mailto:contact@ohmyfood.fr">Contact</a>
-                </li>
-
-            </ul>
-        </nav>
+        <ul class="nav__list">
+            <li>
+                <h2 class="list__heading">
+                    <a href="index.html">ohmyfood</a>
+                </h2>
+            </li>
+            <li class="list__item">
+                <a href="#">Proposer un restaurant</a>
+            </li>
+            <li class="list__item">
+                <a href="#">Devenir partenaire</a>
+            </li>
+            <li class="list__item">
+                <a href="#">Mentions légales</a>
+            </li>
+            <li class="list__item">
+                <a href="mailto:contact@ohmyfood.fr">Contact</a>
+            </li>
+        </ul>
     </footer>
 </body>
 
