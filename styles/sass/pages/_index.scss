@@ -1,16 +1,54 @@
+<<<<<<< HEAD
+=======
+.location {
+    display: flex;
+    justify-content: center;
+    background-color: #eaeaea;
+    box-shadow: inset 0px 2px 2px darken($grey92, 11);
+
+    &::before {
+        display: flex;
+        align-items: center;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        content: '\f3c5';
+        font: var(--fa-font-solid);
+        position: relative;
+        left: 1rem;
+        font-size: 1rem;
+    }
+
+    &__input {
+        text-align: center;
+        margin: 18px 0;
+        background-color: $grey92;
+        border: none;
+        outline: none;
+        font-family: $text-typo;
+        font-size: 1em;
+        font-weight: 500;
+        color: #353535;
+    }
+
+    &::placeholder {
+        font-family: $text-typo;
+        font-weight: 500;
+        color: #353535;
+
+    }
+}
+
+>>>>>>> features/mediaqueries
 .explore {
     padding: 22px 30px 43px 30px;
     background-color: $grey97;
     text-align: center;
-    ;
 
     &__heading {
         font-family: $text-typo;
         font-size: 1.2em;
         padding: 0 45px;
     }
-
-
 
     &__text {
         margin: 20px 0 30px 0;
@@ -21,8 +59,6 @@
         font-size: 0.9em;
         font-weight: 300;
     }
-
-
 }
 
 .functioning {
@@ -44,7 +80,6 @@
         @include desktop {
             flex-direction: row;
         }
-
 
         &__item {
             max-width: 760px;
@@ -76,7 +111,6 @@
                 color: #ffffff;
                 position: absolute;
                 left: -0.65rem;
-
             }
 
             &:nth-child(1)::after {
@@ -151,7 +185,7 @@
     }
 
     @include desktop {
-        max-width: 30%;
+        max-width: 40%;
     }
 
     a {
@@ -209,7 +243,6 @@
     }
 
     &__heart {
-
 
         &::after {
             display: flex;
