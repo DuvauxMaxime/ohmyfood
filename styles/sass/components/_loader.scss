@@ -4,7 +4,7 @@
     height: 100%;
     position: fixed;
     background: $grey97;
-    animation: loader 2.8s forwards ease-in;
+    animation: loader 3s forwards ease-in;
     z-index: 1;
     display: flex;
     justify-content: center;
@@ -25,8 +25,8 @@
 
     }
 
-    80% {
-        opacity: 0.8;
+    92% {
+        opacity: 1;
     }
 
     100% {

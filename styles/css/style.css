@@ -412,7 +412,7 @@ body {
   height: 100%;
   position: fixed;
   background: hsl(0deg, 0%, 97%);
-  animation: loader 2.8s forwards ease-in;
+  animation: loader 3s forwards ease-in;
   z-index: 1;
   display: flex;
   justify-content: center;
@@ -433,8 +433,8 @@ body {
   0% {
     opacity: 1;
   }
-  80% {
-    opacity: 0.8;
+  92% {
+    opacity: 1;
   }
   100% {
     opacity: 0;
@@ -803,7 +803,7 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .card {
-    max-width: 30%;
+    max-width: 40%;
   }
 }
 .card a {
