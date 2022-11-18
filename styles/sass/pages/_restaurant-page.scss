@@ -23,6 +23,16 @@
     display: flex;
     flex-direction: column;
 
+    &__mediaqueries {
+
+        @include desktop {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 100%;
+        }
+    }
+
 
     &__heading {
         width: 100%;
@@ -72,33 +82,69 @@
         & :nth-child(5) {
             animation-delay: 0.8s;
         }
+
+        @include desktop {
+            width: 30%;
+        }
     }
 
     &__main-dish {
         & :nth-child(2) {
             animation-delay: 1s;
+
+            @include desktop {
+                animation-delay: 0.2s;
+            }
         }
 
         & :nth-child(3) {
             animation-delay: 1.2s;
+
+            @include desktop {
+                animation-delay: 0.4s;
+            }
         }
 
         & :nth-child(4) {
             animation-delay: 1.4s;
+
+            @include desktop {
+                animation-delay: 0.6s;
+            }
+        }
+
+        @include desktop {
+            width: 30%;
         }
     }
 
     &__dessert {
         & :nth-child(2) {
             animation-delay: 1.6s;
+
+            @include desktop {
+                animation-delay: 0.2s;
+            }
         }
 
         & :nth-child(3) {
             animation-delay: 1.8s;
+
+            @include desktop {
+                animation-delay: 0.4s;
+            }
         }
 
         & :nth-child(4) {
             animation-delay: 2s;
+
+            @include desktop {
+                animation-delay: 0.6s;
+            }
+        }
+
+        @include desktop {
+            width: 30%;
         }
     }
 }
@@ -268,6 +314,10 @@
         opacity: 0;
         animation: appear 1s forwards ease-out;
         animation-delay: 1s;
+
+        @include desktop {
+            animation-delay: 0s;
+        }
     }
 
     &__list {
@@ -316,6 +366,10 @@
         opacity: 0;
         animation: appear 1s forwards ease-out;
         animation-delay: 1s;
+
+        @include desktop {
+            animation-delay: 0s;
+        }
     }
 }
 
@@ -330,6 +384,10 @@
         opacity: 0;
         animation: appear 1s forwards ease-out;
         animation-delay: 1.4s;
+
+        @include desktop {
+            animation-delay: 0s;
+        }
     }
 
     &__list {
@@ -378,6 +436,10 @@
         opacity: 0;
         animation: appear 1s forwards ease-out;
         animation-delay: 1.4s;
+
+        @include desktop {
+            animation-delay: 0s;
+        }
     }
 }
 
