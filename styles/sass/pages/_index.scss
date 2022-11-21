@@ -253,6 +253,8 @@
             top: 12.3rem;
             font-size: 2rem;
             cursor: pointer;
+            z-index: -5000;
+
         }
 
         &:active::after {
@@ -263,6 +265,7 @@
             background-clip: text;
             color: transparent;
             animation: animated-heart 1s forwards ease-out;
+
         }
     }
 }
