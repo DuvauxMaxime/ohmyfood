@@ -926,7 +926,6 @@ body {
   top: 12.3rem;
   font-size: 2rem;
   cursor: pointer;
-  z-index: -5000;
 }
 .card__heart:active::after {
   font: var(--fa-font-solid);
@@ -935,7 +934,7 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  animation: animated-heart 1s forwards ease-out;
+  animation: animated-heart 0.55s forwards ease-out;
 }
 
 @keyframes animated-heart {
@@ -1005,7 +1004,7 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  animation: animated-heart 1s forwards ease-out;
+  animation: animated-heart 0.55s forwards ease-out;
 }
 .menu__starters :nth-child(2) {
   animation-delay: 0.2s;
