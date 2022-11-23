@@ -46,8 +46,6 @@
     &__heart {
 
         &::after {
-            display: flex;
-            align-items: center;
             text-rendering: auto;
             -webkit-font-smoothing: antialiased;
             content: '\f004';
@@ -309,7 +307,6 @@
             left: 1.1rem;
             font-size: 1.5rem;
             color: #ffffff;
-            transform: rotate(0deg);
             transition: transform 1000ms;
         }
     }
