@@ -980,7 +980,6 @@ body {
   }
 }
 .menu__heading {
-  width: 100%;
   font-family: "Shrikhand", Arial, Helvetica, sans-serif;
 }
 @media screen and (min-width: 1024px) {
